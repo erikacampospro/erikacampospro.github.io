@@ -1,1 +1,62 @@
+/* ======= RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ======= NAVBAR ======= */
+nav {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ======= CONTENIDO ======= */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ======= TITULOS ======= */
+h1, h2, h3 {
+  color: #79c0ff;
+  margin-bottom: 15px;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #8b949e;
+}
 
