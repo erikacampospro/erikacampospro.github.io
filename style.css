@@ -64,7 +64,7 @@ body {
     box-shadow: 0 0 12px rgba(0,0,0,0.08);
     height: fit-content;
     margin-right: 20px;
-    text-align: center;
+    text-align: center; /* CENTRA TODO */
 }
 
 .profile-pic {
@@ -83,22 +83,26 @@ body {
 }
 
 .sidebar h3 {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
+    text-align: center; /* CENTRADO */
 }
 
+/* LISTA CENTRADA */
 .sidebar ul {
     list-style: none;
     padding-left: 0;
-    text-align: left;
+    text-align: center; /* CENTRA LOS ENLACES */
+    margin: 0;
 }
 
 .sidebar ul li {
-    margin: 6px 0;
+    margin: 8px 0;
 }
 
+/* ENLACES */
 .sidebar ul a {
     color: #0366d6;
     text-decoration: none;
