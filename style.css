@@ -102,6 +102,20 @@ body {
     margin: 8px 0;
 }
 
+/* Centramos todo el contenido del sidebar */
+.sidebar,
+.sidebar ul,
+.sidebar ul li,
+.sidebar h3 {
+    text-align: center;
+}
+
+/* Mejor alineación de los enlaces */
+.sidebar ul a {
+    display: inline-block;
+    margin: 3px 0;
+}
+
 /* ENLACES */
 .sidebar ul a {
     color: #0366d6;
