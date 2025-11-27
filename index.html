@@ -6,42 +6,67 @@
     <title>Portafolio Profesional - Erika Campos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="nav-left">
-            <h1 class="logo">Erika Campos</h1>
-        </div>
-        <div class="nav-right">
-            <a href="index.html">Inicio</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">Sobre mí</a>
-        </div>
+        <div class="logo">Erika Campos</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Artículos</a></li>
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
     </nav>
 
-    <!-- HERO -->
-    <header class="hero">
-        <h2>Portafolio Profesional</h2>
-        <p>Gestión administrativa · Cartera · Riesgos · Atención al cliente</p>
-    </header>
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="container">
-        <section class="recent-posts">
-            <h2>Artículos Recientes</h2>
-            <div id="posts-container"></div>
-        </section>
-    </main>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <img src="profile.jpg" alt="Foto de Erika" class="profile-pic">
+            <h2>Erika Campos</h2>
+            <p>Profesional en Gestión Documental y Administración, enfocada en procesos, organización y soporte administrativo.</p>
+
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/erica-campos-43b59718b/" target="_blank">LinkedIn</a></li>
+                <li><a href="#">Descargar CV</a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="content">
+            <h1>Bienvenida a mi portafolio profesional</h1>
+            <p>Aquí encontrarás mis proyectos, experiencia, artículos y todo lo relacionado con mi trayectoria profesional.</p>
+
+            <h2>Últimos artículos</h2>
+            <div class="articles">
+                <div class="article-card">
+                    <h3>Título del Artículo 1</h3>
+                    <p>Descripción corta del artículo...</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="article-card">
+                    <h3>Título del Artículo 2</h3>
+                    <p>Descripción corta del artículo...</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="article-card">
+                    <h3>Título del Artículo 3</h3>
+                    <p>Descripción corta del artículo...</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </main>
+
+    </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Erika Campos · Portafolio Profesional</p>
+    <footer>
+        © 2025 Erika Campos | Portafolio Profesional
     </footer>
-
-<script src="config.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
