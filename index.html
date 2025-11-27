@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EC Notes</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio – Erica Campos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
+
+    <!-- NAVBAR SUPERIOR -->
     <nav class="navbar">
-        <div class="nav-left">EC Notes</div>
-        <ul class="nav-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Artículos</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Etiquetas</a></li>
-            <li><a href="#">Acerca de</a></li>
-        </ul>
+        <div class="nav-left">Portafolio de Erica Campos</div>
+        <div class="nav-right">
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
     </nav>
 
+
+    <!-- CONTENEDOR GENERAL -->
     <div class="layout">
+
         <!-- SIDEBAR -->
         <aside class="sidebar">
-            <img src="erika.jpg" alt="Foto de Erika Campos" class="profile-pic" />
-            <h2>Erika Campos</h2>
-            <p class="tagline">Proyectos · Productos digitales · IA</p>
+            <img src="profile.jpg" alt="Foto de perfil de Erica" class="profile-img">
 
-            <div class="sidebar-links">
-                <p><strong>Email</strong></p>
-                <a href="mailto:erika.camposp20@gmail.com">erika.camposp20@gmail.com</a>
+            <h2>Erica Campos</h2>
 
-                <p><strong>LinkedIn</strong></p>
-                <a href="https://www.linkedin.com/in/erica-campos-43b59718b/" target="_blank">LinkedIn</a>
-
-                <p><strong>GitHub</strong></p>
-                <a href="https://github.com/erikacampospro" target="_blank">GitHub</a>
-            </div>
-
-            <div class="temas">
-                <h3>Temas</h3>
-                <ul>
-                    <li>Tema 1</li>
-                    <li>Tema 2</li>
-                    <li>Tema 3</li>
-                    <li>Tema 4</li>
-                </ul>
-            </div>
+            <ul class="sidebar-links">
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="mailto:erika.camposp20@gmail.com">Email</a></li>
+            </ul>
         </aside>
 
-        <!-- MAIN CONTENT -->
+
+        <!-- CONTENIDO PRINCIPAL -->
         <main class="content">
-            <section class="intro-card">
-                <h1>Bienvenida a EC Notes</h1>
-                <p>Aquí encontrarás artículos, análisis, proyectos y contenido de valor creado por Erika Campos.</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Ver artículos</a>
-                    <a href="#" class="btn">Acerca de</a>
-                </div>
+
+            <section id="sobre-mi">
+                <h1>Sobre Mí</h1>
+                <p>
+                    Hola, soy <strong>Erica Campos</strong>. Este es mi portafolio profesional diseñado con un estilo limpio,
+                    moderno y totalmente adaptado con la paleta de colores que utilizamos.
+                </p>
             </section>
 
-            <section class="articles">
-                <h2>Artículos recientes</h2>
+            <section id="habilidades">
+                <h1>Habilidades</h1>
+                <ul>
+                    <li>Comunicación</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Gestión del tiempo</li>
+                </ul>
+            </section>
 
-                <article class="article-card">
-                    <h3>Título del Artículo 1</h3>
-                    <p>Breve descripción del artículo...</p>
-                    <a href="#" class="btn-small">Leer más</a>
-                </article>
+            <section id="proyectos">
+                <h1>Proyectos</h1>
 
-                <article class="article-card">
-                    <h3>Título del Artículo 2</h3>
-                    <p>Breve descripción del artículo...</p>
-                    <a href="#" class="btn-small">Leer más</a>
+                <article class="project">
+                    <h2>Proyecto de Ejemplo</h2>
+                    <p>Descripción breve del proyecto.</p>
+
+                    <figure class="article-figure">
+                        <img src="profile.jpg" alt="Ejemplo de imagen">
+                        <figcaption>Ejemplo de imagen dentro de un artículo.</figcaption>
+                    </figure>
                 </article>
             </section>
+
+            <section id="contacto">
+                <h1>Contacto</h1>
+                <p>Puedes escribirme directamente al correo:</p>
+                <a class="email-btn" href="mailto:erika.camposp20@gmail.com">
+                    👉 Enviarme un mensaje
+                </a>
+            </section>
+
         </main>
     </div>
+
 </body>
 </html>
