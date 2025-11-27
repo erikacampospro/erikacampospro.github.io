@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional - Erika Campos</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EC Notes</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Erika Campos</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Proyectos</a></li>
+        <div class="nav-left">EC Notes</div>
+        <ul class="nav-right">
+            <li><a href="#">Home</a></li>
             <li><a href="#">Artículos</a></li>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Etiquetas</a></li>
+            <li><a href="#">Acerca de</a></li>
         </ul>
     </nav>
 
-    <!-- CONTENEDOR PRINCIPAL -->
-    <div class="container">
-
+    <div class="layout">
         <!-- SIDEBAR -->
         <aside class="sidebar">
-            <img src="profile.jpg" alt="Foto de Erika" class="profile-pic">
+            <img src="erika.jpg" alt="Foto de Erika Campos" class="profile-pic" />
             <h2>Erika Campos</h2>
-            <p>Profesional en Gestión Documental y Administración, enfocada en procesos, organización y soporte administrativo.</p>
+            <p class="tagline">Proyectos · Productos digitales · IA</p>
 
-            <h3>Enlaces</h3>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/erica-campos-43b59718b/" target="_blank">LinkedIn</a></li>
-                <li><a href="#">Descargar CV</a></li>
-            </ul>
+            <div class="sidebar-links">
+                <p><strong>Email</strong></p>
+                <a href="mailto:erika.camposp20@gmail.com">erika.camposp20@gmail.com</a>
+
+                <p><strong>LinkedIn</strong></p>
+                <a href="https://www.linkedin.com/in/erica-campos-43b59718b/" target="_blank">LinkedIn</a>
+
+                <p><strong>GitHub</strong></p>
+                <a href="https://github.com/erikacampospro" target="_blank">GitHub</a>
+            </div>
+
+            <div class="temas">
+                <h3>Temas</h3>
+                <ul>
+                    <li>Tema 1</li>
+                    <li>Tema 2</li>
+                    <li>Tema 3</li>
+                    <li>Tema 4</li>
+                </ul>
+            </div>
         </aside>
 
-        <!-- CONTENIDO -->
+        <!-- MAIN CONTENT -->
         <main class="content">
-            <h1>Bienvenida a mi portafolio profesional</h1>
-            <p>Aquí encontrarás mis proyectos, experiencia, artículos y todo lo relacionado con mi trayectoria profesional.</p>
+            <section class="intro-card">
+                <h1>Bienvenida a EC Notes</h1>
+                <p>Aquí encontrarás artículos, análisis, proyectos y contenido de valor creado por Erika Campos.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Ver artículos</a>
+                    <a href="#" class="btn">Acerca de</a>
+                </div>
+            </section>
 
-            <h2>Últimos artículos</h2>
-            <div class="articles">
-                <div class="article-card">
+            <section class="articles">
+                <h2>Artículos recientes</h2>
+
+                <article class="article-card">
                     <h3>Título del Artículo 1</h3>
-                    <p>Descripción corta del artículo...</p>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="article-card">
+                    <p>Breve descripción del artículo...</p>
+                    <a href="#" class="btn-small">Leer más</a>
+                </article>
+
+                <article class="article-card">
                     <h3>Título del Artículo 2</h3>
-                    <p>Descripción corta del artículo...</p>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="article-card">
-                    <h3>Título del Artículo 3</h3>
-                    <p>Descripción corta del artículo...</p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
+                    <p>Breve descripción del artículo...</p>
+                    <a href="#" class="btn-small">Leer más</a>
+                </article>
+            </section>
         </main>
-
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Erika Campos | Portafolio Profesional
-    </footer>
-
 </body>
 </html>
