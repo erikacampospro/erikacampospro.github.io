@@ -59,39 +59,50 @@ body {
 .sidebar {
     width: 260px;
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
     height: fit-content;
     margin-right: 20px;
+    text-align: center;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
 }
 
 .sidebar h2 {
-    text-align: center;
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .sidebar ul {
     list-style: none;
     padding-left: 0;
+    text-align: left;
 }
 
 .sidebar ul li {
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
 .sidebar ul a {
     color: #0366d6;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .sidebar ul a:hover {
