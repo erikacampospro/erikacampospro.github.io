@@ -1,167 +1,148 @@
-/* ==========================
-   RESET GENERAL
-=========================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+/* ======= VARIABLES DE COLOR ======= */
+:root {
+    --morado: #AE7DAC;
+    --azul-oscuro: #03122F;
+    --blanco: #FFFFFF;
+
+    --texto-claro: #F4F4F4;
+    --sombra: rgba(0,0,0,0.25);
 }
 
-/* ==========================
-   FONDO GENERAL
-=========================== */
+/* ======= BODY ======= */
 body {
-    background-color: #AE7DAC;
-    display: flex;
-    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--morado);
+    color: var(--blanco);
 }
 
-/* ==========================
-   SIDEBAR IZQUIERDA
-=========================== */
-.sidebar {
-    width: 260px;
-    background-color: #ffffff;
-    padding: 25px;
-    border-right: 3px solid #03122F;
-    position: fixed;
-    top: 60px; /* espacio para navbar */
-    bottom: 0;
-    overflow-y: auto;
-}
-
-.sidebar img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.sidebar h2 {
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #03122F;
-}
-
-.sidebar p {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.sidebar a {
-    display: block;
-    color: #03122F;
-    margin-bottom: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-/* ==========================
-   NAVBAR SUPERIOR
-=========================== */
+/* ======= NAVBAR ======= */
 .navbar {
     width: 100%;
-    height: 60px;
-    background-color: #03122F;
-    padding: 15px 25px;
+    background: var(--azul-oscuro);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px var(--sombra);
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 100;
+    z-index: 10;
 }
 
-.navbar a {
+.nav-left {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-right a {
     margin-left: 20px;
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
-.navbar a:hover {
+.nav-right a:hover {
     text-decoration: underline;
 }
 
-/* ==========================
-   CONTENIDO PRINCIPAL
-=========================== */
-.main-content {
-    margin-left: 260px; /* espacio para sidebar */
-    padding: 100px 40px 40px 40px;
-    width: calc(100% - 260px);
-}
-
-/* ==========================
-   TARJETAS DE ARTÍCULOS
-=========================== */
-.cards {
+/* ======= LAYOUT ======= */
+.layout {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
-.card {
-    background-color: #ffffff;
-    padding: 20px;
-    width: 45%;
+/* ======= SIDEBAR ======= */
+.sidebar {
+    width: 260px;
+    background: var(--azul-oscuro);
+    padding: 25px;
+    box-shadow: 2px 0 8px var(--sombra);
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+}
+
+.profile-img {
+    width: 140px;
     border-radius: 10px;
-    border-left: 4px solid #03122F;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto 15px;
 }
 
-.card h3 {
-    color: #03122F;
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar-links li {
     margin-bottom: 10px;
 }
 
-.card p {
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.card a {
+.sidebar-links a {
+    color: var(--blanco);
     text-decoration: none;
-    color: #03122F;
-    font-weight: bold;
+    font-size: 1.05rem;
 }
 
-.card a:hover {
+.sidebar-links a:hover {
     text-decoration: underline;
 }
 
-/* ==========================
-   RESPONSIVE
-=========================== */
-@media (max-width: 900px) {
-    .main-content {
-        margin-left: 0;
-        width: 100%;
-    }
-    
-    .sidebar {
-        position: relative;
-        width: 100%;
-        top: 0;
-        border-right: none;
-        border-bottom: 3px solid #03122F;
-    }
+/* ======= CONTENIDO PRINCIPAL ======= */
+.content {
+    margin-left: 280px;
+    padding: 20px 40px;
+    color: var(--blanco);
+}
 
-    .navbar {
-        position: relative;
-    }
+h1 {
+    border-bottom: 2px solid var(--blanco);
+    padding-bottom: 5px;
+}
 
-    .cards .card {
-        width: 100%;
-    }
+.project {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ======= FIGURES ======= */
+.article-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px var(--sombra);
+}
+
+.article-figure figcaption {
+    font-size: 0.85rem;
+    color: #e5e5e5;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* ======= BOTÓN DE CONTACTO ======= */
+.email-btn {
+    background: var(--blanco);
+    color: var(--azul-oscuro);
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.email-btn:hover {
+    background: #ddd;
 }
