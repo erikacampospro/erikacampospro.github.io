@@ -202,3 +202,15 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* =======================
+   FOOTER
+   ======================= */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #ffffff10;
+    color: #ddd;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #ffffff20;
+}
