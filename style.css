@@ -7,11 +7,15 @@ body {
     font-family: 'Inter', sans-serif;
     background: #0f172a;
     color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Contenedor principal */
 .container {
     display: flex;
+    flex: 1;
 }
 
 /* ===========================
@@ -21,7 +25,7 @@ body {
     width: 100%;
     background-color: #0a0f1f;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +43,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 30px;
+    padding-right: 40px; /* evita que “Acerca de” se corte */
 }
 
 .nav-links a {
@@ -59,7 +64,7 @@ body {
 .sidebar {
     width: 260px;
     background: #1e293b;
-    padding: 120px 20px 30px;
+    padding: 120px 20px 40px;
     box-sizing: border-box;
     position: fixed;
     left: 0;
@@ -83,7 +88,7 @@ body {
 /* Nombre */
 .sidebar h2 {
     text-align: center;
-    margin: 5px 0 3px;
+    margin: 5px 0 10px;
     font-size: 19px;
 }
 
@@ -93,11 +98,26 @@ body {
     color: #cbd5e1;
 }
 
-/* LINKS */
+/* TITULOS DEL SIDEBAR */
+.sidebar h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #38bdf8;
+}
+
+/* LINKS SIN PUNTOS */
+.sidebar-links {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* quita puntos */
+}
+
 .sidebar-links a {
     display: block;
     text-align: center;
-    margin: 6px 0;
+    padding: 6px 0;
     font-size: 14px;
     text-decoration: none;
     color: #f1f5f9;
@@ -169,7 +189,7 @@ body {
 }
 
 /* ===========================
-   FOOTER
+   FOOTER FIJO ABAJO (STICKY)
 =========================== */
 footer {
     margin-left: 260px;
@@ -180,6 +200,7 @@ footer {
     color: #94a3b8;
     border-top: 1px solid #334155;
     background: #0f172a;
+    margin-top: auto;
 }
 
 /* ===========================
