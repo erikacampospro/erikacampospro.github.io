@@ -318,3 +318,13 @@ footer {
 .btn-secondary:hover {
     background: #1e293b;
 }
+
+/* EFECTO DE LA FOTO – ZOOM + GLOW */
+.profile-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px #38bdf8;
+}
