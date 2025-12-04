@@ -227,3 +227,36 @@ footer {
         width: 100%;
     }
 }
+/* LISTADO DE ARTÍCULOS ESTILO HACKNOTES */
+.article-list {
+    margin-top: 20px;
+}
+
+.article-item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #334155;
+}
+
+.article-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    text-decoration: underline;
+}
+
+.article-meta {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 5px 0;
+}
+
+.article-description {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
