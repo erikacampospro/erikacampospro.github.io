@@ -260,3 +260,23 @@ footer {
     font-size: 15px;
 }
 
+/* TARJETA DE INTRODUCCIÓN ESTILO HACKNOTES / IGUAL A TU PORTAFOLIO */
+.intro-card {
+    background: #1e293b; /* fondo de tarjeta igual al sidebar */
+    border: 1px solid #334155; /* borde gris elegante */
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.intro-card h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #f1f5f9;
+}
+
+.intro-card p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #cbd5e1;
+}
