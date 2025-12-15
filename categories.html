@@ -12,19 +12,19 @@
 <nav class="navbar">
     <div class="logo">EC Notes</div>
     <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="articles.html">Artículos</a></li>
-    <li><a href="categories.html">Categorías</a></li>
-    <li><a href="tags.html">Etiquetas</a></li>
-    <li><a href="about.html">Acerca de</a></li>
-</ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Artículos</a></li>
+        <li><a href="categories.html">Categorías</a></li>
+        <li><a href="#">Etiquetas</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+    </ul>
 </nav>
 
 <div class="container">
 
-    <!-- SIDEBAR -->
+    <!-- SIDEBAR (IGUAL A HOME Y ARTÍCULOS) -->
     <aside class="sidebar">
-        <img src="profile.jpg" alt="Foto de Erika" class="profile-img">
+        <img src="profile.jpg" alt="Foto de Erica" class="profile-img">
 
         <h2>Erica Campos</h2>
         <p>Proyectos · Productos Digitales · IA</p>
@@ -36,68 +36,77 @@
             <a href="https://github.com/erikacampospro" target="_blank">GitHub</a>
         </div>
 
-        <h3>Temas</h3>
+        <h3>Categorías</h3>
         <div class="sidebar-links">
-            <a href="#">Tema 1</a>
-            <a href="#">Tema 2</a>
-            <a href="#">Tema 3</a>
-            <a href="#">Tema 4</a>
+            <a href="#tema1">Tema 1</a>
+            <a href="#tema2">Tema 2</a>
+            <a href="#tema3">Tema 3</a>
+            <a href="#tema4">Tema 4</a>
+            <a href="#certificaciones">Certificaciones</a>
         </div>
     </aside>
 
     <!-- CONTENIDO -->
     <main class="content">
         <h1>Categorías</h1>
+        <p>Explora los artículos organizados por temática. Contenido provisional mientras se publica el material final.</p>
 
-        <p>
-            Selecciona una categoría para explorar los artículos relacionados.
-            Cada categoría agrupa contenidos por temática, facilitando la consulta
-            y el aprendizaje progresivo.
-        </p>
+        <!-- TEMA 1 -->
+        <section id="tema1" class="article-item">
+            <h2>Tema 1</h2>
+            <p class="article-meta">2 artículos</p>
 
-        <div class="article-list">
+            <a href="#" class="article-title">Artículo Tema 1 · Placeholder 1</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
 
-            <div class="article-item">
-                <a href="articles.html#tema1" class="article-title">Tema 1</a>
-                <p class="article-meta">2 artículos</p>
-                <p class="article-description">
-                    Artículos relacionados con el Tema 1. Contenido provisional.
-                </p>
-            </div>
+            <a href="#" class="article-title">Artículo Tema 1 · Placeholder 2</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+        </section>
 
-            <div class="article-item">
-                <a href="articles.html#tema2" class="article-title">Tema 2</a>
-                <p class="article-meta">2 artículos</p>
-                <p class="article-description">
-                    Artículos relacionados con el Tema 2. Contenido provisional.
-                </p>
-            </div>
+        <!-- TEMA 2 -->
+        <section id="tema2" class="article-item">
+            <h2>Tema 2</h2>
+            <p class="article-meta">2 artículos</p>
 
-            <div class="article-item">
-                <a href="articles.html#tema3" class="article-title">Tema 3</a>
-                <p class="article-meta">2 artículos</p>
-                <p class="article-description">
-                    Artículos relacionados con el Tema 3. Contenido provisional.
-                </p>
-            </div>
+            <a href="#" class="article-title">Artículo Tema 2 · Placeholder 1</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
 
-            <div class="article-item">
-                <a href="articles.html#tema4" class="article-title">Tema 4</a>
-                <p class="article-meta">2 artículos</p>
-                <p class="article-description">
-                    Artículos relacionados con el Tema 4. Contenido provisional.
-                </p>
-            </div>
+            <a href="#" class="article-title">Artículo Tema 2 · Placeholder 2</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+        </section>
 
-            <div class="article-item">
-                <a href="certificaciones.html" class="article-title">Certificaciones</a>
-                <p class="article-meta">Formación profesional</p>
-                <p class="article-description">
-                    Certificaciones y formación profesional. Contenido provisional.
-                </p>
-            </div>
+        <!-- TEMA 3 -->
+        <section id="tema3" class="article-item">
+            <h2>Tema 3</h2>
+            <p class="article-meta">2 artículos</p>
 
-        </div>
+            <a href="#" class="article-title">Artículo Tema 3 · Placeholder 1</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+
+            <a href="#" class="article-title">Artículo Tema 3 · Placeholder 2</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+        </section>
+
+        <!-- TEMA 4 -->
+        <section id="tema4" class="article-item">
+            <h2>Tema 4</h2>
+            <p class="article-meta">2 artículos</p>
+
+            <a href="#" class="article-title">Artículo Tema 4 · Placeholder 1</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+
+            <a href="#" class="article-title">Artículo Tema 4 · Placeholder 2</a>
+            <p class="article-description">Contenido provisional del artículo.</p>
+        </section>
+
+        <!-- CERTIFICACIONES -->
+        <section id="certificaciones" class="article-item">
+            <h2>Certificaciones</h2>
+            <p class="article-meta">Formación profesional</p>
+
+            <p class="article-description">Listado provisional de certificaciones y formación.</p>
+        </section>
+
     </main>
 
 </div>
